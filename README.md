@@ -16,7 +16,7 @@ gulp.task('templates', function () {
         .pipe(gulp.dest('build/'));
 });
 ~~~
-### result:
+### result in build/templates.js file
 ~~~
 _templates = {"index":"<div></div>", "layouts.main":"<div></div>"};
 ~~~
