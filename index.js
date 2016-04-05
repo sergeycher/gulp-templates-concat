@@ -37,7 +37,7 @@ module.exports = function(filePath, options) {
         var html = file.contents.toString().replace(/>[\s]*([\S]*)[\s]*</g, '>$1<');
         var root = path.resolve(options.root);
 
-        var name = file.path.replace(root, '').replace('.html', '').substring(1).replace(/\\/g, '.');
+        var name = file.path.replace(root, '').replace('.html', '').replace('.mustache', '').substring(1).replace(/\\/g, '.');
 
         if (options.debug) {
             console.log(name);
